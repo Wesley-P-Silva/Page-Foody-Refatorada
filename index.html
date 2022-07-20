@@ -9,6 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
   <title>Foody</title>
 </head>
 
@@ -17,7 +18,7 @@
   <header>
     <img src="./img/Logo.png" alt="">
 
-    <ul>
+    <ul id="list">
       <li>Home</li>
       <li>Services</li>
       <li>About</li>
@@ -28,6 +29,8 @@
       <span>Search Foody...</span>
       <img src="./img/search.png" alt="">
     </div>
+
+    <i class='bx bx-menu menu'></i>
 
   </header>
 
@@ -42,6 +45,27 @@
     <img src="./img/telegram.png" alt="">
     <img src="./img/whatsapp.png" alt="">
   </footer>
+
+  <script>
+    const menu = document.querySelector(".menu")
+    const list = document.getElementById("list")
+
+    list.style.maxHeight = "0px"
+    list.style.padding = "0px"
+
+    function showMenu() {
+      if (list.style.maxHeight === "0px" && list.style.padding === "0px") {
+        list.style.maxHeight = "400px"
+        list.style.padding = "20px 0"
+        list.style.background = "#fff"
+      } else {
+        list.style.maxHeight = "0px"
+        list.style.padding = "0px"
+      }
+    }
+
+    menu.addEventListener("click", showMenu)
+  </script>
 
 </body>
 
