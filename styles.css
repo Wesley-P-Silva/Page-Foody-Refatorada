@@ -34,6 +34,8 @@ header ul {
   font-size: 24px;
   color: #fff;
   list-style: none;
+  cursor: pointer;
+  margin-top: -32px;
 }
 
 div {
@@ -55,12 +57,20 @@ section {
   align-items: center;
 }
 
+.order {
+  cursor: pointer;
+}
+
 footer {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 8rem;
   margin: 4rem 0 2rem 0;
+}
+
+footer img {
+  cursor: pointer;
 }
 
 @media (max-width: 1080px){
@@ -84,6 +94,7 @@ footer {
     border-radius: 8px;
     overflow: hidden;
     transition: 0.6s;
+    cursor: pointer;
   }
 
   .menu {
