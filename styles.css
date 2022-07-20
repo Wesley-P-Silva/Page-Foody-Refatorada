@@ -47,8 +47,6 @@ section {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  /* padding: 100px 0; */
-  /* height: 60vh; */
 }
 
 footer {
@@ -83,5 +81,20 @@ footer {
 
   header ul {
     display: none;
+  }
+
+  footer {
+    gap: 5rem;
+  }
+}
+
+@media (max-width: 550px) {
+
+  section img{
+    width: 20rem;
+  }
+
+  footer {
+    gap: 3rem;
   }
 }
